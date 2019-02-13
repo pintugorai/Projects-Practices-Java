@@ -13,6 +13,9 @@ class Superclass
 	}
 }
 
+// Implicit super constructor Superclass() is undefined for default constructor. 
+//Must define an explicit constructor
+
 class Subclass extends Superclass
 {
 	
