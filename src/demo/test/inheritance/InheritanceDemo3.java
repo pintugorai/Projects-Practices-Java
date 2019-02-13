@@ -19,6 +19,7 @@ class Superclass3
 
 class Subclass3 extends Superclass3
 {
+	// Pintu 
 	//Illegal modifier for the constructor in type Subclass3; only public, protected & private are permitted
 	static Subclass3()
 	{
