@@ -1,5 +1,6 @@
 package openSource;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -14,6 +15,7 @@ public class TimeZoneConverter {
 		//tzc.getCurrentTimeZone();
 		
 		tzc.convertTime();
+		System.out.println(tzc.getCurrentTime());
 	}
 
 	/*public LocalTime timeFromSourceToTargetZone(LocalTime time,TimeZone sTimeZone, TimeZone tTimeZone)
@@ -22,6 +24,14 @@ public class TimeZoneConverter {
 		return tTime;
 		
 	}*/
+	
+	public String getCurrentTime()
+	{
+		Calendar cal = new Calendar();
+		String time= new SimpleDateFormat("dd MMM yyyy HH:mm:ss").format(cal.getTime());
+		
+		return time;
+	}
 	public void timeZoneConverter() {
 
 	}
